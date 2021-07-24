@@ -40,7 +40,8 @@ export const Container = styled.div`
         justifyContent === "end" ? "flex-end" : "center"
     )};
     height: ${({height}) => (
-        height === "525" ? "525px" : ""
+        height === "525" ? "525px" : "none" &&
+        height === "535" ? "625px" : ""
     )};
     margin: ${({margin}) => (
         margin === "1.5-0-0-0" ? "1.5rem 0rem 0rem 0rem" : "0rem 0rem 0rem 0rem" 
@@ -63,7 +64,8 @@ export const Card = styled.div`
         width === "385" ? "385px" : "100%"
     )};
     height: ${({height}) => (
-        height === "712" ? "712px" : "100%"
+        height === "712" ? "712px" : "100%" &&
+        height === "800" ? "800px" : "100%"
     )};
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 `;
