@@ -46,6 +46,7 @@ export const Container = styled.div`
         margin === "1.5-0-0-0" ? "1.5rem 0rem 0rem 0rem" : "0rem 0rem 0rem 0rem" 
     )};
     padding: ${({padding}) => (
+        padding === "0-2-0-2" ? "0rem 2rem 0rem 2rem" : "0rem 0rem" &&
         padding === "2-3-0-3" ? "2rem 3rem 0rem 3rem" : "0rem 0rem"
     )};
     border-radius: ${({borderRadius}) => (
@@ -69,11 +70,19 @@ export const Card = styled.div`
 
 export const Image = styled.img`
     width: ${({width}) => (
+        width === "100" ? "100px" : "100%" &&
         width === "110" ? "110px" : "100%"
+    )};
+    height: ${({height}) => (
+        height === "100" ? "100px" : "100%"
     )};
     object-fit: cover;
     margin: ${({margin}) => (
+        margin === "1-0-0-0" ? "1rem 0rem 0rem 0rem" : "0rem 0rem 0rem orem" &&
         margin === "2-0-0-0" ? "2rem 0rem 0rem 0rem" : "0rem 0rem 0rem orem"
+    )};
+    border-radius: ${({borderRadius}) => (
+        borderRadius === "50" ? "50px" : "none"
     )};
 `;
 
